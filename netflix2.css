@@ -1,0 +1,388 @@
+    
+      *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Roboto;
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;1,100;1,300;1,600&family=Poppins:wght@600&family=Roboto:wght@300;400;500;700;900&display=swap');
+      }
+      body{
+        background-color: #000;
+        font-family: 'Roboto', sans-serif;
+      }
+      .container{
+        height: 100vh;
+        width: 100%;
+      }
+      .container header{
+       width: 100%;
+       height: 500px;
+       background-image: linear-gradient(to bottom, rgba(4,9,30,1), rgba(0,0,0,0.2), rgba(4,9,30,1)), url('back.jpg');
+       background-size: cover;
+       background-position: center;
+       position: relative;
+       border-bottom: 3px solid rgb(107,107,107);
+      }
+      nav a{
+        text-decoration: none;
+      }
+       nav .links{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 50px;
+       }
+       nav .links img{
+         width: 170px;
+       }
+       nav .links #sign{
+         background: red;
+         padding: 8px 18px;
+         color: white;
+         border-radius: 5px;
+         font-weight: 400;
+       }
+       header .header-content{
+         position: absolute;
+         transform: translate(-50%, -50%);
+         top: 50%;
+         left: 50%;
+         color: white;
+         text-align: center;
+       }
+       .header-content h1{
+         font-size: 3rem;
+       }
+       .header-content h3{
+         font-size: 1.3rem;
+         font-weight: 400;
+         margin: 1rem;
+       }
+       .header-content p{
+         font-size: 1rem;
+         margin-bottom: 1rem;
+       }
+       .header-content #email-submit{
+         width: 100%;
+         display: flex;
+         align-items: center;
+       }
+       #email-submit input{
+         width: 70%;
+         height: 50px;
+         padding: 0px 0.5rem;
+         border-radius: 2px;
+         outline: none;
+         border: none;
+       }
+       .header-content #email-submit #cta{
+         width: 30%;
+         outline: none;
+         border: none;
+         background: red;
+         color: white;
+         height: 50px;
+         font-size: 1.2em;
+         font-weight: 400;
+         border-radius: 2px;
+         position: relative;
+       }
+       .header-content #email-submit #cta:after{
+         content: "›";
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         font-size: 1.5rem;
+       }
+       /* 1-3 sections */
+       .first,
+       .second,
+       .third, 
+       .fourth{
+         height: 350px;
+         display: flex;
+         align-items: center;
+         color: white;
+         border-bottom: 3px solid rgb(107,107,107);
+       }
+       .first .content1, 
+       .first .image1, 
+       .second .content2,
+       .second .image2,
+       .third .content3,
+       .third .image3,
+       .fourth .content4,
+       .fourth .image4{
+         height: 400px;
+         width: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 0 3rem;
+         position: relative;
+       }
+       .content1 h2, .content2 h2, .content3 h2, .content4 h2{
+         font-size: 2.8rem;
+         margin: 1rem auto;
+       }
+       .content1 p, .content2 p, .content3 p, .content4 p{
+         font-size: 1.4rem;
+       }
+       .second .image2 .button{
+         position: absolute;
+         bottom: 60px;
+         width: 50%;
+         border: 1px solid #909090;
+         background: black;
+         color: white;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         justify-content: space-between;
+         padding:1rem;
+       }
+       .second .image2 .button img{
+         width: 50px;
+         border-radius: 50%;
+       }
+       .second .image2 .button a{
+         text-decoration: none;
+         color: white;
+         font-size: 1.1em;
+       }
+       .second .image2 .button a span{
+         color: #00b1ff;
+         font-size: 0.8em;
+       }
+       .second .image2 i{
+         color: #00e6ff;
+       }
+/* image extension */
+       img{
+         width: 400px;
+         background: none;
+       }
+       .question{
+         color: white;
+         text-align: center;
+         margin-bottom: 2rem;
+       }
+       .question .question-header h4{
+         margin-top: 4rem;
+         font-size: 1.4rem;
+         margin-bottom: 25px;
+       }
+       /* info section netflix */
+       .wrappper{
+         display: flex;
+         align-items: center;
+       }
+       .accordion{
+         width: 60%;
+         padding: 18px;
+         text-align: left;
+         margin: .3rem auto;
+         display: flex;
+         justify-content: space-between;
+         font-size: 1.2rem;
+         outline: none;
+         border: none;
+         background-color: #48494B;
+         color: whitesmoke;
+       }
+       
+      .panel {
+        padding: 0 18px;
+        background-color: #48494B;
+        overflow: hidden;
+        text-align: center;
+        margin: 0 13rem;
+        font-size: 1rem;
+        padding: 1.2rem;
+        display: none;
+        text-align: left;
+      }
+      .email p{
+        margin: 1rem;
+      }
+      .email #email-submit{
+        margin: 0 5rem;
+      }
+      .email #email-submit input{
+        width: 50%;
+        height: 50px;
+      }
+      .email #email-submit #cta{
+        padding: 0 1rem;
+        width: 20%;
+        height: 50px;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: #e51212;
+        border-radius: 2px;
+        font-size: 1.2rem;
+      }
+      /* footer */
+      .footer{
+        height: 300px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        color: #767676;
+      }
+      .footer .col{
+        padding: 1rem;
+        margin: 0 1rem;
+      }
+      .footer .col h4{
+        margin: 1rem auto;
+        font-size: 1rem;
+      }
+      .footer .col p{
+        line-height: 2;
+      }
+
+       /*
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+*/
+       @media only screen and (max-width: 600px){
+           .container{
+             overflow-x: hidden;
+           }
+           header{
+             height: 600px;
+           }
+           header .header-content h1{
+             font-size: 2rem;
+           }
+           nav .links img{
+             width: 120px;
+           }
+           nav .links #sign{
+             padding: 0.5rem 1rem;
+             font-size: 0.9rem;
+             font-weight: 400;
+           }
+
+           /* submit */
+           #email-submit{
+             flex-direction: column;
+             padding: 0 1rem;
+           }
+           #email-submit input{
+             width: 100%;
+             margin:1rem;
+           }
+           .header-content #email-submit #cta{
+             font-size: 18px;
+             width: 40%;
+             display: flex;
+             align-items: center;
+             padding: 0 15px;
+             
+           }
+           nav .links{
+             padding:0 1rem;
+           }
+           header .header-content{
+             margin-top: 2rem;
+             width: 100%;
+             padding: 0 1rem;
+           }
+           #email-submit #cta{
+             font-size: 0.8rem;
+           }
+           /* adver sections */
+           .first{
+             flex-direction: column;
+             height: 400px;
+           }
+           .first .content1, 
+           .first .image1, 
+           .second .content2,
+           .second .image2,
+           .third .content3,
+           .third .image3,
+           .fourth .content4,
+           .fourth .image4{
+             width: 100%;
+             padding: 0 1.5rem;
+             text-align: center;
+           }
+           .second .image2 .button{
+             bottom: 20px;
+             width: 60%;
+           }
+           .second .image2, .fourth .image4{
+             order: 2;
+           }
+           .content1 h2, .content2 h2, .content3 h2, .content4 h2{
+             font-size: 2rem;
+           }
+           .content1 p, .content2 p, .content3 p, .content4 p{
+             font-size: 1.2rem;
+           }
+           .second, 
+           .third,
+           .fourth{
+             height: 500px;
+             flex-direction: column;
+           }
+           img{
+             width: 350px;
+           }
+           /* accordion */
+           .accordion{
+             width: 100%;
+           }
+           .panel{
+             margin: 0;
+           }
+            .email #email-submit{
+              width: 100%;
+              margin: 0
+            }
+            .email #email-submit input{
+              width: 90%;
+            }
+            .email #email-submit #cta{
+              width: 35%;
+              margin: 1em auto;
+              height: 50px;
+              font-size: 1rem;
+            }
+            /* footer */
+            .footer{
+              display: grid;
+              grid-template: repeat(2, 1fr)/repeat(2,1fr);
+              padding: 1rem;
+            }
+            .footer .col{
+              margin: 0;
+            }
+            .footer .col h4{
+              font-size: 1.3rem;
+            }
+       }
+    
